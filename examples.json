@@ -1,0 +1,19 @@
+{
+  "terraform": {
+    "plan_reviewed": true,
+    "destructive_changes": 0,
+    "approved_change_ticket": "CHG-1531"
+  },
+  "service": {
+    "multi_az": true,
+    "rollback_runbook": "runbooks/payment-api-rollback.md"
+  },
+  "observability": {
+    "slo_error_budget_remaining": 42,
+    "alerts_tested": true
+  },
+  "incident": {
+    "open_sev1_or_sev2": false,
+    "on_call_owner": "sre-primary"
+  }
+}
